@@ -20,4 +20,8 @@ public class Deck : Singleton<Deck>
     {
         entities.Add(entity);
     }
+    public void RemoveDeck(Entity entity)
+    {
+        entities.Remove(entity);
+    }
 }
