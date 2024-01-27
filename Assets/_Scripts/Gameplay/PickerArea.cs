@@ -15,8 +15,8 @@ public class PickerArea : MonoBehaviour
         return pickers;
     }
 
-    public void SetAreaEffect() 
+    public int GetPickersLenght() 
     {
-    
+        return pickers.Count;
     }
 }

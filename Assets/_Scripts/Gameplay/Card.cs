@@ -14,7 +14,10 @@ public class Card : MonoBehaviour
 
     public void AddDeck() 
     {
-        Deck.instance.AddDeck(entity);
+        if(entity != null)
+        {
+            Deck.instance.AddDeck(entity);
+        }
         TurnManager.instance.onSelectCardEvent();
     }
 }

@@ -17,6 +17,8 @@ public class PickerManager : Singleton<PickerManager>
         List<Entity> entities = new();
         List<Picker> pickerss = new();
 
+        Dictionary<int, List<Entity>> entityArea = new();
+
         entitiesShuffle =  entitiesShuffle.OrderBy(x => Random.Range(0f, 1f)).ToList();
         int countDeck = Deck.instance.entities.Count;
 
@@ -41,14 +43,22 @@ public class PickerManager : Singleton<PickerManager>
 
         List<Picker> pickerShuffle;
         pickerShuffle = pickerss.OrderBy(x => Random.Range(0f, 1f)).Take(countDeck).ToList();
+
         pickerShuffle = pickerShuffle.OrderBy((x) =>
         {
-            return pickerss.IndexOf(x);
+            int index = pickerss.IndexOf(x);
+            return index;
         }).ToList();
+
 
         for(int i = 0; i < entities.Count; i++) 
         {
-            seq.Append(entities[i].Pick(pickerShuffle[i].transform.position, .55f));
+            seq.Append(entities[i].Pick(pickerShuffle[i], .55f));
+        }
+
+        for (int i = 0; i < entities.Count; i++)
+        {
+            seq.AppendCallback(entities[i].SetPickerArea);
         }
 
         for (int i = 0; i < entities.Count; i++)

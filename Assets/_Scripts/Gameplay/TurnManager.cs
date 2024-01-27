@@ -33,8 +33,14 @@ public class TurnManager : Singleton<TurnManager>
     [HideInInspector]
     public UnityAction onSelectCardEvent;
 
+    [HideInInspector]
+    public UnityAction onWinGame;
+
     int currentLevel;
     int currentTurn;
+    int showedCards = 0;
+
+    public bool IsFinishTurn { get => currentTurn >= levelDatas[currentLevel].turnCount;  }
 
     public override void Awake()
     {
@@ -51,9 +57,8 @@ public class TurnManager : Singleton<TurnManager>
             {
                 Destroy(child.gameObject);
             }
-
-            currentTurn++;
-            if (levelDatas[currentLevel].turnCount >= currentTurn)
+            
+            if (!IsFinishTurn)
             {
                 onStartTurnEvent();
             }
@@ -61,6 +66,8 @@ public class TurnManager : Singleton<TurnManager>
             {
                 onEndTurnEvent();
             }
+
+            currentTurn++;
         };
 
         onEndTurnEvent = () =>
@@ -69,23 +76,63 @@ public class TurnManager : Singleton<TurnManager>
             {
                 Destroy(child.gameObject);
             }
+
+            int reqGold = levelDatas[currentLevel].regGold;
+            if (GoldManager.instance.gold >= reqGold)
+            {
+                GoldManager.instance.gold -= reqGold;
+            }
+            else
+            {
+                //Lose Game
+                Debug.Log("Lose Game!");
+                return;
+            }
+
+            currentLevel++;
+            currentTurn = 0;
+
+            if (currentLevel >= levelDatas.Length)
+            {
+                //Win Game
+                Debug.Log("Win Game!");
+                return;
+            }
+
+            onNextTurnEvent();
         };
 
         onShowCardEvent = () =>
         {
+            if (IsFinishTurn) 
+            {
+                onEndTurnEvent();
+                return;
+            }
             CardManager.instance.SetCanvasActive(true);
         };
 
         onSelectCardEvent = () =>
         {
             CardManager.instance.SetCanvasActive(false);
-            onNextTurnEvent();
+            showedCards++;
+
+            if (showedCards < levelDatas[currentLevel].turnDatas[currentTurn].cardShowCount) 
+            {
+                onShowCardEvent();
+            }
+            else 
+            {
+                showedCards = 0;
+                onNextTurnEvent();
+            }
         };
     }
 
     public IEnumerator Start()
     {
         yield return new WaitForSeconds(.5f);
-        onStartTurnEvent();
+        onShowCardEvent();
+        yield break;
     }
 }
