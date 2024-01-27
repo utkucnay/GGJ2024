@@ -99,7 +99,7 @@ public class TurnManager : Singleton<TurnManager>
                 return;
             }
 
-            onNextTurnEvent();
+            onShowCardEvent();
         };
 
         onShowCardEvent = () =>

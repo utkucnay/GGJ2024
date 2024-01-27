@@ -7,6 +7,7 @@ public class Card : MonoBehaviour
 {
     public Entity entity;
 
+    public bool isPool = true;
     public float rarity;
 
     private void Awake()

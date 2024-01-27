@@ -134,4 +134,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entity: {fileID: 7391443723484298967, guid: 13131140f0989480dbdf195b9aef5291, type: 3}
+  isPool: 1
   rarity: 1
