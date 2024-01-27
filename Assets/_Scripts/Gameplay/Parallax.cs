@@ -27,7 +27,7 @@ public class Parallax : MonoBehaviour
                 var pos = t.transform.position;
                 //pos.x += 5800;
                 pos.x += 958 * 6;
-                t.transform.position = pos;
+                t.transform.position = pos * Time.deltaTime;
             }
         }
 
@@ -40,7 +40,7 @@ public class Parallax : MonoBehaviour
                 var pos = t.transform.position;
                 //pos.x += 5800;
                 pos.x += 958 * 6;
-                t.transform.position = pos;
+                t.transform.position = pos * Time.deltaTime;
             }
         }
 
@@ -53,7 +53,7 @@ public class Parallax : MonoBehaviour
                 var pos = t.transform.position;
                 //pos.x += 5800;
                 pos.x += 958 * 6;
-                t.transform.position = pos;
+                t.transform.position = pos * Time.deltaTime;
             }
         }
 
@@ -66,7 +66,7 @@ public class Parallax : MonoBehaviour
                 var pos = t.transform.position;
                 //pos.x += 5800;
                 pos.x += 958 * 6;
-                t.transform.position = pos;
+                t.transform.position = pos * Time.deltaTime;
             }
         }
 
@@ -79,7 +79,7 @@ public class Parallax : MonoBehaviour
                 var pos = t.transform.position;
                 //pos.x += 5800;
                 pos.x += 958 * 6;
-                t.transform.position = pos;
+                t.transform.position = pos * Time.deltaTime;
             }
         }
     }
