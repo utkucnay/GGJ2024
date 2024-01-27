@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Deck : Singleton<Deck>
 {
-    public List<Card> cards;
+    public List<Entity> entities;
 
     public override void Awake()
     {
@@ -14,5 +14,10 @@ public class Deck : Singleton<Deck>
     private void Start()
     {
         
+    }
+
+    public void AddDeck(Entity entity) 
+    {
+        entities.Add(entity);
     }
 }

@@ -1,15 +1,20 @@
-using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Card : MonoBehaviour //its going to abstact class
+public class Card : MonoBehaviour
 {
-    public GameObject prefab;
+    public Entity entity;
 
-    //public abstract void Execute();
-    public void Pick(in Vector3 pos) 
+    private void Awake()
     {
-        transform.DOMove(pos, .3f);
+        GetComponent<Button>().onClick.AddListener(AddDeck);
+    }
+
+    public void AddDeck() 
+    {
+        Deck.instance.AddDeck(entity);
+        TurnManager.instance.onSelectCardEvent();
     }
 }
