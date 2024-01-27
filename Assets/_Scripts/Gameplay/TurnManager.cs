@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -68,6 +69,8 @@ public class TurnManager : Singleton<TurnManager>
             }
 
             currentTurn++;
+
+            TourUI.instance.NextTurnEvent();
         };
 
         onEndTurnEvent = () =>
@@ -91,6 +94,9 @@ public class TurnManager : Singleton<TurnManager>
 
             currentLevel++;
             currentTurn = 0;
+
+            TourUI.instance.DestroyUI();
+            TourUI.instance.CreateTurnUI();
 
             if (currentLevel >= levelDatas.Length)
             {
@@ -132,7 +138,18 @@ public class TurnManager : Singleton<TurnManager>
     public IEnumerator Start()
     {
         yield return new WaitForSeconds(.5f);
+        TourUI.instance.CreateTurnUI();
         onShowCardEvent();
         yield break;
+    }
+
+    public int GetTurnCount()
+    {
+        return levelDatas[currentLevel].turnCount;
+    }
+
+    public int GetMaxGoldReq()
+    {
+        return levelDatas[currentLevel].regGold;
     }
 }

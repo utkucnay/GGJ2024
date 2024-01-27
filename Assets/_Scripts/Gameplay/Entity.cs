@@ -19,6 +19,7 @@ public class Entity : MonoBehaviour //its going to abstact class
     }
     public Tween Pick(Picker picker, float time) 
     {
+
         picker.card = this;
         this.picker = picker;
 
