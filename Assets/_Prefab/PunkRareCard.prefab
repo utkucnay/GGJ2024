@@ -133,4 +133,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403f11d5c8a7b1d4d86b8b8476684f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 0}
+  entity: {fileID: 5209704292364051402, guid: 8639d9cb4a074478094dc2163cc8ebfd, type: 3}
+  rarity: 0.4

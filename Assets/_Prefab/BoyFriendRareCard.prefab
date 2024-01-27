@@ -134,3 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entity: {fileID: 684954282773131084, guid: 8897d31a960a443af951adba3ef2ae81, type: 3}
+<<<<<<< Updated upstream
+=======
+  rarity: 0.4
+>>>>>>> Stashed changes
