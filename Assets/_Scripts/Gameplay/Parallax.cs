@@ -20,20 +20,20 @@ public class Parallax : MonoBehaviour
     {
         foreach (Transform t in parallaxLayer1) 
         {
-            t.transform.position += Vector3.left * parallaxSpeed1;
+            t.transform.position += Vector3.left * parallaxSpeed1 * Time.timeScale;
 
             if (t.transform.position.x < a) 
             {
                 var pos = t.transform.position;
                 //pos.x += 5800;
                 pos.x += 958 * 6;
-                t.transform.position = pos * Time.deltaTime;
+                t.transform.position = pos;
             }
         }
 
         foreach (Transform t in parallaxLayer2)
         {
-            t.transform.position += Vector3.left * parallaxSpeed2;
+            t.transform.position += Vector3.left * parallaxSpeed2 * Time.timeScale;
 
             if (t.transform.position.x < a)
             {
@@ -46,40 +46,40 @@ public class Parallax : MonoBehaviour
 
         foreach (Transform t in parallaxLayer3)
         {
-            t.transform.position += Vector3.left * parallaxSpeed3;
+            t.transform.position += Vector3.left * parallaxSpeed3 * Time.timeScale;
 
             if (t.transform.position.x < a)
             {
                 var pos = t.transform.position;
                 //pos.x += 5800;
                 pos.x += 958 * 6;
-                t.transform.position = pos * Time.deltaTime;
+                t.transform.position = pos;
             }
         }
 
         foreach (Transform t in parallaxLayer4)
         {
-            t.transform.position += Vector3.left * parallaxSpeed4;
+            t.transform.position += Vector3.left * parallaxSpeed4 * Time.timeScale;
 
             if (t.transform.position.x < -1000)
             {
                 var pos = t.transform.position;
                 //pos.x += 5800;
                 pos.x += 958 * 6;
-                t.transform.position = pos * Time.deltaTime;
+                t.transform.position = pos;
             }
         }
 
         foreach (Transform t in parallaxLayer5)
         {
-            t.transform.position += Vector3.left * parallaxSpeed5;
+            t.transform.position += Vector3.left * parallaxSpeed5 * Time.timeScale;
 
             if (t.transform.position.x < a)
             {
                 var pos = t.transform.position;
                 //pos.x += 5800;
                 pos.x += 958 * 6;
-                t.transform.position = pos * Time.deltaTime;
+                t.transform.position = pos;
             }
         }
     }
