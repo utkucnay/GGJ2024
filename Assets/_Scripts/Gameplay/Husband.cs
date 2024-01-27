@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoyFriend : Entity
+public class Husband : Entity
 {
     public override void Execute()
     {
         base.Execute();
         if (Random.Range(0f, 1f) < 0.05f)
         {
-            GoldManager.instance.gold -= 100;
+            GoldManager.instance.gold -= 1000;
             Deck.instance.RemoveDeck(this);
             return;
         }
@@ -32,20 +32,11 @@ public class BoyFriend : Entity
 
             }
         }
-        for (int i = 0; i < entitiesInArea.Length; i++)
-        {
-            if (entitiesInArea[i].GetType().Name == "Baby")
-            {
-                Deck.instance.AddDeck(Husband);
-                Deck.instance.RemoveDeck(this);
-                Deck.instance.RemoveDeck(entitiesInArea[i]);
-                return;
-            }
-        }
         
-        GoldManager.instance.gold += 50;
+
+        GoldManager.instance.gold += 100;
         return;
-        
+
 
     }
 }
