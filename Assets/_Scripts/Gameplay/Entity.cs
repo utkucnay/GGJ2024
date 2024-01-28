@@ -43,7 +43,8 @@ public class Entity : MonoBehaviour //its going to abstact class
         this.picker = picker;
 
         Vector3 newPos = picker.transform.position;
-        newPos.y += transform.gameObject.GetComponent<RectTransform>().rect.height / 2 * 6;
+        newPos.y += transform.gameObject.GetComponent<RectTransform>().rect.height / 2 * 8;
+        newPos.x -= transform.gameObject.GetComponent<RectTransform>().rect.width / 2 * 0.5f;
         return transform.DOMove(newPos, time).SetEase(Ease.OutBounce);
     }
 
