@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BoyFriend : Entity
 {
+    public Entity Husband;
     public override void Execute()
     {
         base.Execute();
