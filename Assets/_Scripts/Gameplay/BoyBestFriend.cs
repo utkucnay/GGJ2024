@@ -11,6 +11,7 @@ public class BoyBestFriend : Entity
     public override void Execute()
     {
         base.Execute();
+        int sum = 0;
 
         for (int i = 0; i < entitiesInArea.Length; i++)
         {
@@ -31,18 +32,22 @@ public class BoyBestFriend : Entity
         {
             if (entitiesInArea[i].GetType().Name == "Internet")
             {
-                GoldManager.instance.gold += 30;
+                sum += 30;
+                GoldManager.instance.gold += sum;
+                return;
             }
         }
 
         if (Random.Range(0f, 1f) < 0.05f)
         {
-            GoldManager.instance.gold -= 5;
+            sum -= 5;
+            GoldManager.instance.gold += sum;
             return;
         }
         else
         {
-            GoldManager.instance.gold += 15;
+            sum += 15;
+            GoldManager.instance.gold += sum;
             return;
         }
 

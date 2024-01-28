@@ -8,9 +8,11 @@ public class BoyFriend : Entity
     public override void Execute()
     {
         base.Execute();
+        int sum = 0;
         if (Random.Range(0f, 1f) < 0.05f)
         {
-            GoldManager.instance.gold -= 100;
+            sum -= 100;
+            GoldManager.instance.gold += sum;
             Deck.instance.RemoveDeck(this);
             return;
         }
@@ -44,7 +46,8 @@ public class BoyFriend : Entity
             }
         }
         
-        GoldManager.instance.gold += 50;
+        sum += 50;
+        GoldManager.instance.gold += sum;
         return;
         
 

@@ -9,23 +9,28 @@ public class Clown : Entity
     public override void Execute()
     {
         base.Execute();
+        int sum = 0;
         for (int i = 0; i < entitiesInArea.Length; i++)
         {
             if (entitiesInArea[i].GetType().Name == "Festival")
             {
-                GoldManager.instance.gold += 2000;
+                sum += 400;
+                GoldManager.instance.gold += sum;
                 return;
             }
         }
 
         if (Random.Range(0f, 1f) < 0.15f)
         {
-            GoldManager.instance.gold -= 25;
+            sum -= 25;
+            GoldManager.instance.gold += sum;
             return;
         }
         else
         {
-            GoldManager.instance.gold += 25;
+            sum += 25;
+            GoldManager.instance.gold += sum;
+            return;
         }
 
     }
