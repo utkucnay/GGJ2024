@@ -17,7 +17,7 @@ public class Intro : MonoBehaviour
         seq.Append(image.DOFade(0, .6f).SetEase(Ease.InOutQuint));
         seq.AppendCallback( () => 
         {
-            SceneManager.LoadScene("MainMenuScene");
+            SceneManager.LoadScene("Tutorial");
         });
     }
 }
