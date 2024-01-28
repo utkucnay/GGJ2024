@@ -922,7 +922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cards:
   - {fileID: 1930050962605624137, guid: 67b4b124ad5e44143ae0918956d6e3b6, type: 3}
-  - {fileID: 609505235478612532, guid: 8e863cbc4ac4e42e9a9015dcb080b2ba, type: 3}
+  - {fileID: 2387394782182875878, guid: 8e863cbc4ac4e42e9a9015dcb080b2ba, type: 3}
   - {fileID: 3173398213391146420, guid: 3dc5911c341b64e68866eb193a43e0b5, type: 3}
   - {fileID: 5736398548697183238, guid: 11edb1fa9f9a142b6ba62c8dfc55e87c, type: 3}
   - {fileID: 5836910654698728358, guid: 3384cb4518662490aa1708457dbc9d16, type: 3}
@@ -1724,7 +1724,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
