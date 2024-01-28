@@ -12,8 +12,9 @@ public class Intro : MonoBehaviour
     private void Awake()
     {
         var seq = DOTween.Sequence();
-        seq.Append(image.DOFade(1, .6f).SetEase(Ease.InOutBack));
-        seq.Append(image.DOFade(0, .6f).SetEase(Ease.InOutBack));
+        seq.Append(image.DOFade(1, .8f).SetEase(Ease.InOutSine));
+        seq.AppendInterval(2f);
+        seq.Append(image.DOFade(0, .6f).SetEase(Ease.InOutQuint));
         seq.AppendCallback( () => 
         {
             SceneManager.LoadScene("MainMenuScene");
