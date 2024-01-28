@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3784658194174505979}
   - component: {fileID: 1975710386464435700}
   m_Layer: 5
-  m_Name: TheraphistEntity
+  m_Name: TherapistEntity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
