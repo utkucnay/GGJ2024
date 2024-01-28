@@ -8,6 +8,7 @@ public class Mom : Entity
     public override void Execute()
     {
         base.Execute();
+        int sum = 0;
         for (int i = 0; i < entitiesInArea.Length; i++)
         {
             if (entitiesInArea[i].GetType().Name == "Dad")
@@ -30,19 +31,23 @@ public class Mom : Entity
         {
             if (entitiesInArea[i].GetType().Name == "GirlFriend")
             {
-                GoldManager.instance.gold -= 30;
-                
+                sum -= 30;
+                GoldManager.instance.gold += sum;
+
+
             }
         }
         if (Random.Range(0f, 1f) < 0.25f)
         {
-            GoldManager.instance.gold += 25;
+            sum += 25;
+            GoldManager.instance.gold += sum;
             return;
         }
         else
         {
 
-            GoldManager.instance.gold -=40;
+            sum -=40;
+            GoldManager.instance.gold += sum;
             return;
         }
 
