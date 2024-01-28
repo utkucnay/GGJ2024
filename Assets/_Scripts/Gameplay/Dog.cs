@@ -1,18 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Dog : MonoBehaviour
+public class Dog : Entity
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Execute()
     {
-        
-    }
+        base.Execute();
+        for (int i = 0; i < entitiesInArea.Length; i++)
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            if (entitiesInArea[i].GetType().Name == "Cat")
+            {
+                return;
+            }
+        }
+        for (int i = 0; i < entitiesInArea.Length; i++)
+        {
+
+            if (entitiesInArea[i].GetType().Name == "Camper")
+            {
+                GoldManager.instance.gold += 80;
+                return;
+            }
+        }
+        if (Random.Range(0f, 1f) < 0.15f)
+        {
+            GoldManager.instance.gold -= 30;
+            return;
+        }
+        else
+        {
+            GoldManager.instance.gold += 20;
+            return;
+        }
+
+
+
+
+
+
     }
-}
