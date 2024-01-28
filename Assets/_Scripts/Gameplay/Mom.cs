@@ -26,22 +26,27 @@ public class Mom : Entity
 
             }
         }
-        if (Random.Range(0f,1f) < 0.75f)
-        {
-            GoldManager.instance.gold -= 40;
-        }
-        else {
-
-            GoldManager.instance.gold += 25;
-        }
         for (int i = 0; i < entitiesInArea.Length; i++)
         {
             if (entitiesInArea[i].GetType().Name == "GirlFriend")
             {
                 GoldManager.instance.gold -= 30;
-                return;
+                
             }
         }
+        if (Random.Range(0f, 1f) < 0.25f)
+        {
+            GoldManager.instance.gold += 25;
+            return;
+        }
+        else
+        {
+
+            GoldManager.instance.gold -=40;
+            return;
+        }
+
+        
 
 
 
