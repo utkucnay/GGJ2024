@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< Updated upstream
 --- !u!1 &1511602319546068687
+=======
+--- !u!1 &632870171089991054
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,29 +12,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 6338504014529291407}
   - component: {fileID: 5154790664689907108}
   - component: {fileID: 4386503376362415388}
   m_Layer: 5
   m_Name: base
+=======
+  - component: {fileID: 2937475191136969070}
+  - component: {fileID: 3746579929170176876}
+  - component: {fileID: 6960252271925293949}
+  m_Layer: 5
+  m_Name: Text (TMP)
+>>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 --- !u!224 &6338504014529291407
+=======
+--- !u!224 &2937475191136969070
+>>>>>>> Stashed changes
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1511602319546068687}
   m_LocalRotation: {x: 0, y: -0.043619405, z: 0, w: 0.9990483}
   m_LocalPosition: {x: 0, y: 0, z: -3.6463}
+=======
+  m_GameObject: {fileID: 632870171089991054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8494822492220246183}
+<<<<<<< Updated upstream
   m_LocalEulerAnglesHint: {x: 0, y: -5, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -38,20 +61,39 @@ RectTransform:
   m_SizeDelta: {x: -9.8503, y: 16.1955}
   m_Pivot: {x: 0.5204756, y: 0.40876958}
 --- !u!222 &5154790664689907108
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.30499625, y: -20}
+  m_SizeDelta: {x: -8.789993, y: -40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3746579929170176876
+>>>>>>> Stashed changes
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1511602319546068687}
   m_CullTransparentMesh: 1
 --- !u!114 &4386503376362415388
+=======
+  m_GameObject: {fileID: 632870171089991054}
+  m_CullTransparentMesh: 1
+--- !u!114 &6960252271925293949
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1511602319546068687}
+=======
+  m_GameObject: {fileID: 632870171089991054}
+>>>>>>> Stashed changes
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -65,10 +107,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
   m_text: base 20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: da9ecd12d64634c81938a789236e2604, type: 2}
   m_sharedMaterial: {fileID: 2347809204905867537, guid: da9ecd12d64634c81938a789236e2604, type: 2}
+=======
+  m_text: Barista
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 2f7835ee7cdc44ec19a29ae196b425bc, type: 2}
+  m_sharedMaterial: {fileID: -8857549986110786208, guid: 2f7835ee7cdc44ec19a29ae196b425bc, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -92,8 +141,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
+<<<<<<< Updated upstream
   m_fontSize: 8
   m_fontSizeBase: 8
+=======
+  m_fontSize: 6
+  m_fontSizeBase: 6
+>>>>>>> Stashed changes
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -128,6 +182,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
+<<<<<<< Updated upstream
   m_margin: {x: 0, y: 103.83951, z: 0, w: 19.15858}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -263,6 +318,9 @@ MonoBehaviour:
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
   m_margin: {x: 6.5139084, y: 39.849846, z: 4.2148895, w: 68.20456}
+=======
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+>>>>>>> Stashed changes
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -301,16 +359,25 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< Updated upstream
   - {fileID: 8317831648628626746}
   - {fileID: 6338504014529291407}
   - {fileID: 568811844369247621}
+=======
+  - {fileID: 2937475191136969070}
+>>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
+<<<<<<< Updated upstream
   m_SizeDelta: {x: 62, y: 122}
   m_Pivot: {x: 0.5, y: 0.5}
+=======
+  m_SizeDelta: {x: 62, y: 118}
+  m_Pivot: {x: 0.5000001, y: 0.5}
+>>>>>>> Stashed changes
 --- !u!222 &761480378071698755
 CanvasRenderer:
   m_ObjectHideFlags: 0
