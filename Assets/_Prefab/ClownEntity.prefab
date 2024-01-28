@@ -88,6 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9acf122834ef945ccb9d196481e1cc74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  card: {fileID: 8780202500730779361, guid: 99049210940af498594caa0c7dfab5b4, type: 3}
   entitiesInArea: []
   Festival: {fileID: -9114085189479984859, guid: 2bf1cc8e587fd4e8a975bb29040a981a, type: 3}

@@ -88,5 +88,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df50a9e4c048349b89bfc7b1da49b0e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  card: {fileID: 5736398548697183238, guid: 11edb1fa9f9a142b6ba62c8dfc55e87c, type: 3}
   entitiesInArea: []

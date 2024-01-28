@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4dbf41614894d840a71b168aaa92bba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  card: {fileID: 4977221056060562944, guid: 4632701eff95b40e4883034c277533b3, type: 3}
   entitiesInArea: []
   Priest: {fileID: -2885633247820895221, guid: 80a1fb51630f84429b0674702bc159ec, type: 3}
   Internet: {fileID: -6333707669998325703, guid: a2c06bbac1e0147d8a072e2a2636f487, type: 3}

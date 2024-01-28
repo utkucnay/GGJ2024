@@ -88,6 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd83c00d9cf9b4a5a9c69f7d1a8c830e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  card: {fileID: 1930050962605624137, guid: 67b4b124ad5e44143ae0918956d6e3b6, type: 3}
   entitiesInArea: []
-  Pirest: {fileID: -2885633247820895221, guid: 80a1fb51630f84429b0674702bc159ec, type: 3}
+  Priest: {fileID: -2885633247820895221, guid: 80a1fb51630f84429b0674702bc159ec, type: 3}

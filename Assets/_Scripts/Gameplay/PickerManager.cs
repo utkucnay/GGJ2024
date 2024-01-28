@@ -55,6 +55,7 @@ public class PickerManager : Singleton<PickerManager>
         for(int i = 0; i < entities.Count; i++) 
         {
             seq.AppendCallback(() => Deck.instance.Draw());
+            seq.AppendCallback(() => SoundManager.instance.PlaySFXSound(SoundManager.SFXSoundType.DrawACard));
             seq.Append(entities[i].Pick(pickerShuffle[i], .55f));
             seq.Join(entities[i].transform.DOScale(Vector3.one, .2f).SetEase(Ease.InElastic));
         }

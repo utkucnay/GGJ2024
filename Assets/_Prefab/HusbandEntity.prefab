@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5b89e2dc96948428c9627a0fd6a4b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  card: {fileID: 7437921906813912690, guid: 1162e7fc89528490d88ca5858ef589fb, type: 3}
   entitiesInArea: []
   BoyFriend: {fileID: 5249827553818669448, guid: 8897d31a960a443af951adba3ef2ae81, type: 3}
   GirlFriend: {fileID: 1095730033422069979, guid: 6c50f93f95f7047ec9e6bee2f6d69405, type: 3}

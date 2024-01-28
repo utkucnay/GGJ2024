@@ -88,6 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 224f24d228c874215b63c5931d5bd4da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  card: {fileID: 5836910654698728358, guid: 3384cb4518662490aa1708457dbc9d16, type: 3}
   entitiesInArea: []
   MemeCat: {fileID: -7321561404576434379, guid: 5454036e5d01a4139858e1db169f0b8d, type: 3}
