@@ -90,3 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   card: {fileID: 5736398548697183238, guid: 11edb1fa9f9a142b6ba62c8dfc55e87c, type: 3}
   entitiesInArea: []
+  Festival: {fileID: -9114085189479984859, guid: 2bf1cc8e587fd4e8a975bb29040a981a, type: 3}

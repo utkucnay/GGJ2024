@@ -4,10 +4,26 @@ using UnityEngine;
 
 public class Camper : Entity
 {
+    public Entity Festival;
     public override void Execute()
     {
         base.Execute();
+
         int sum = 0;
+
+        for (int i = 0; i < entitiesInArea.Length; i++)
+        {
+
+            if (entitiesInArea[i].GetType().Name == "Punk")
+            {
+                Deck.instance.AddDeck(Festival);
+                Deck.instance.RemoveDeck(this);
+                Deck.instance.RemoveDeck(entitiesInArea[i]);
+                return;
+
+            }
+        }
+
         if (Random.Range(0f, 1f) < 0.15f)
         {
             sum -= 20;

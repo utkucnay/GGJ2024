@@ -99,8 +99,6 @@ public class TurnManager : Singleton<TurnManager>
             currentLevel++;
             currentTurn = 0;
 
-            TourUI.instance.DestroyUI();
-            TourUI.instance.CreateTurnUI();
 
             if (currentLevel >= levelDatas.Length)
             {
@@ -109,6 +107,8 @@ public class TurnManager : Singleton<TurnManager>
                 SceneManager.LoadScene("GameWin");
                 return;
             }
+            TourUI.instance.DestroyUI();
+            TourUI.instance.CreateTurnUI();
 
             onShowCardEvent();
             Talent.instance.skip = 3;

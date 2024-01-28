@@ -53,7 +53,7 @@ public class Festival : Entity
 
             for (int i = 0; i < entitiesInArea.Length; i++)
             {
-                if (entitiesInArea[i].GetType().Name == "Camp")
+                if (entitiesInArea[i].GetType().Name == "Camper")
                 {
                     sum += 450;
                     GoldManager.instance.gold += sum;
