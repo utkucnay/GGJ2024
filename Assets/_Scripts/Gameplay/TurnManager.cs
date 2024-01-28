@@ -116,11 +116,14 @@ public class TurnManager : Singleton<TurnManager>
                 return;
             }
             CardManager.instance.SetCanvasActive(true);
+            GameCanvas.instance.SetCanvasActive(false);
         };
 
         onSelectCardEvent = () =>
         {
             CardManager.instance.SetCanvasActive(false);
+            GameCanvas.instance.SetCanvasActive(true);
+
             showedCards++;
 
             if (showedCards < levelDatas[currentLevel].turnDatas[currentTurn].cardShowCount) 

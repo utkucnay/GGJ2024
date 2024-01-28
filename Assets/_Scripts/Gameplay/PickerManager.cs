@@ -64,7 +64,7 @@ public class PickerManager : Singleton<PickerManager>
         for (int i = 0; i < entities.Count; i++)
         {
             seq.AppendCallback(entities[i].Execute);
-            seq.AppendInterval(.55f);
+            seq.AppendInterval(.6f);
         }
 
         seq.AppendCallback(() => 

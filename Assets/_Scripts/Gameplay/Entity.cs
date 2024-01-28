@@ -15,7 +15,9 @@ public class Entity : MonoBehaviour //its going to abstact class
 
     public virtual void Execute() 
     {
-        Debug.Log("Execute Entity Speel");
+        var seq = DOTween.Sequence();
+        seq.Append(transform.DOMoveY(20, .3f).SetRelative()).SetEase(Ease.InBack);
+        seq.Append(transform.DOMoveY(-20, .3f).SetRelative()).SetEase(Ease.OutBack);
     }
     public Tween Pick(Picker picker, float time) 
     {
