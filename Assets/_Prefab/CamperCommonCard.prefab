@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 9045728770340655458}
   - component: {fileID: 3103595923284600632}
   - component: {fileID: 5736398548697183238}
+  - component: {fileID: 5305729447797775826}
   m_Layer: 5
   m_Name: CamperCommonCard
   m_TagString: Untagged
@@ -502,7 +503,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -542,3 +543,24 @@ MonoBehaviour:
   entity: {fileID: -2683721878237794357, guid: 9f7dc56734afe469ea807c9130c1cae3, type: 3}
   isPool: 1
   rarity: 1
+--- !u!95 &5305729447797775826
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5218389970213720965}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66b13d1e6a2554071a445b90232ffd57, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
