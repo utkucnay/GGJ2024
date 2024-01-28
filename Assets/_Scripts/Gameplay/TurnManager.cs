@@ -71,6 +71,8 @@ public class TurnManager : Singleton<TurnManager>
             currentTurn++;
 
             TourUI.instance.NextTurnEvent();
+            GameCanvas.instance.NextDay();
+            GameCanvas.instance.SetReqGold(levelDatas[currentLevel].regGold);
         };
 
         onEndTurnEvent = () =>
