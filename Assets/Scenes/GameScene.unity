@@ -5869,13 +5869,6 @@ MonoBehaviour:
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
-    regGold: 500
-  - turnDatas:
-    - cardShowCount: 1
-    - cardShowCount: 1
-    - cardShowCount: 1
-    - cardShowCount: 1
-    - cardShowCount: 1
     regGold: 800
   - turnDatas:
     - cardShowCount: 1
@@ -5883,21 +5876,64 @@ MonoBehaviour:
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
-    regGold: 1000
+    regGold: 200
   - turnDatas:
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
-    regGold: 1800
+    regGold: 1600
   - turnDatas:
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
-    regGold: 100000
+    regGold: 2400
+  - turnDatas:
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    regGold: 3200
+  - turnDatas:
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    regGold: 4800
+  - turnDatas:
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    regGold: 6400
+  - turnDatas:
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    regGold: 9200
+  - turnDatas:
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    regGold: 12000
 --- !u!4 &1805889267
 Transform:
   m_ObjectHideFlags: 0
