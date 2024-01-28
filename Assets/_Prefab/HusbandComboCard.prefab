@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3952215825435550816}
   - component: {fileID: 5823968105401252152}
   - component: {fileID: 7437921906813912690}
+  - component: {fileID: -4522790734185370852}
   m_Layer: 5
   m_Name: HusbandComboCard
   m_TagString: Untagged
@@ -99,7 +100,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -139,6 +140,27 @@ MonoBehaviour:
   entity: {fileID: -2232676145085585351, guid: 35e0af6c2cd12463381b5692bebaaaa0, type: 3}
   isPool: 1
   rarity: 0.00001
+--- !u!95 &-4522790734185370852
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2858326851471169692}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66b13d1e6a2554071a445b90232ffd57, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3828601597936076093
 GameObject:
   m_ObjectHideFlags: 0

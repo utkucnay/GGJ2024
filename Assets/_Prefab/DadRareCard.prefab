@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 46480321968309520}
   - component: {fileID: 8666068862748245972}
   - component: {fileID: 7687336509833883795}
+  - component: {fileID: -7987881450452269248}
   m_Layer: 5
   m_Name: DadRareCard
   m_TagString: Untagged
@@ -233,7 +234,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -273,6 +274,27 @@ MonoBehaviour:
   entity: {fileID: -1960977487103726405, guid: 8c2f4816b4628455397eecfcba0e8115, type: 3}
   isPool: 1
   rarity: 0.4
+--- !u!95 &-7987881450452269248
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673943027937127928}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66b13d1e6a2554071a445b90232ffd57, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2330915289525399518
 GameObject:
   m_ObjectHideFlags: 0

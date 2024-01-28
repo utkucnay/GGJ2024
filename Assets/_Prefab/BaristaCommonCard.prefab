@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 7354258687157822297}
   - component: {fileID: 4205471370554513715}
   - component: {fileID: 609505235478612532}
+  - component: {fileID: 382059187247632860}
   m_Layer: 5
   m_Name: BaristaCommonCard
   m_TagString: Untagged
@@ -367,7 +368,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -407,6 +408,27 @@ MonoBehaviour:
   entity: {fileID: -6458184231129569571, guid: 78e14accbf999401595267009997a4c2, type: 3}
   isPool: 1
   rarity: 1
+--- !u!95 &382059187247632860
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2677157346987802416}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66b13d1e6a2554071a445b90232ffd57, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6058089516534317711
 GameObject:
   m_ObjectHideFlags: 0

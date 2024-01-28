@@ -424,6 +424,7 @@ GameObject:
   - component: {fileID: 3932681367049862018}
   - component: {fileID: 3554689804572598113}
   - component: {fileID: 2017283793411980794}
+  - component: {fileID: -4509552776546293570}
   m_Layer: 5
   m_Name: PunkRareCard
   m_TagString: Untagged
@@ -510,7 +511,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -550,3 +551,24 @@ MonoBehaviour:
   entity: {fileID: 2096104401407360384, guid: 8639d9cb4a074478094dc2163cc8ebfd, type: 3}
   isPool: 1
   rarity: 0.4
+--- !u!95 &-4509552776546293570
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8412202372340616182}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 66b13d1e6a2554071a445b90232ffd57, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
