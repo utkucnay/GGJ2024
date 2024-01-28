@@ -20,6 +20,7 @@ public class Mom : Entity
                         Deck.instance.RemoveDeck(this);
                         Deck.instance.RemoveDeck(entitiesInArea[i]);
                         Deck.instance.RemoveDeck(entitiesInArea[j]);
+                        return;
                     }
                 }
 
