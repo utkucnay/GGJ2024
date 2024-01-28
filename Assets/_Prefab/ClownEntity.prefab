@@ -90,4 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  Festival: {fileID: 0}
+  Festival: {fileID: -9114085189479984859, guid: 2bf1cc8e587fd4e8a975bb29040a981a, type: 3}

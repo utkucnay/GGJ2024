@@ -90,11 +90,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  Priest: {fileID: 0}
-  Internet: {fileID: 0}
-  BoyFriend: {fileID: 0}
-  BoyBestFriend: {fileID: 0}
-  GirlFriend: {fileID: 0}
-  GirlBestFriend: {fileID: 0}
-  Mom: {fileID: 0}
-  Dad: {fileID: 0}
+  Priest: {fileID: -2885633247820895221, guid: 80a1fb51630f84429b0674702bc159ec, type: 3}
+  Internet: {fileID: -6333707669998325703, guid: a2c06bbac1e0147d8a072e2a2636f487, type: 3}
+  BoyFriend: {fileID: 5249827553818669448, guid: 8897d31a960a443af951adba3ef2ae81, type: 3}
+  BoyBestFriend: {fileID: 6792296777638079832, guid: b12a9e3d80e664c609a843ccf400c597, type: 3}
+  GirlFriend: {fileID: 1095730033422069979, guid: 6c50f93f95f7047ec9e6bee2f6d69405, type: 3}
+  GirlBestFriend: {fileID: 686704530878385282, guid: 13131140f0989480dbdf195b9aef5291, type: 3}
+  Mom: {fileID: 613856088314117066, guid: e10a93629d1b042429e5cbc24c286d33, type: 3}
+  Dad: {fileID: -1960977487103726405, guid: 8c2f4816b4628455397eecfcba0e8115, type: 3}

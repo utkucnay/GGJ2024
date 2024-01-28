@@ -90,4 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  Husband: {fileID: 0}
+  Husband: {fileID: -2232676145085585351, guid: 35e0af6c2cd12463381b5692bebaaaa0, type: 3}

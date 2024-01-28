@@ -90,4 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  Dog: {fileID: 0}
+  Dog: {fileID: -4628912684595821386, guid: c67e9d5b819754f72af11d05ba5cfe03, type: 3}

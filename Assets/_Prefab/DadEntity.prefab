@@ -90,5 +90,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  Mom: {fileID: 0}
-  Family: {fileID: 0}
+  Mom: {fileID: 613856088314117066, guid: e10a93629d1b042429e5cbc24c286d33, type: 3}
+  Family: {fileID: -3319546023249484243, guid: 9b2911c8e198c490ebd08394c694268f, type: 3}

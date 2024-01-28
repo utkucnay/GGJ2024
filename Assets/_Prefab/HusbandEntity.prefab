@@ -90,5 +90,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  BoyFriend: {fileID: 0}
-  GirlFriend: {fileID: 0}
+  BoyFriend: {fileID: 5249827553818669448, guid: 8897d31a960a443af951adba3ef2ae81, type: 3}
+  GirlFriend: {fileID: 1095730033422069979, guid: 6c50f93f95f7047ec9e6bee2f6d69405, type: 3}

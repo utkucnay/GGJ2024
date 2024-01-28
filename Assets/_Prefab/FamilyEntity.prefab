@@ -90,7 +90,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  Punk: {fileID: 0}
-  Wife: {fileID: 0}
-  Husband: {fileID: 0}
-  Baby: {fileID: 0}
+  Punk: {fileID: 2096104401407360384, guid: 8639d9cb4a074478094dc2163cc8ebfd, type: 3}
+  Wife: {fileID: -1970160016438789131, guid: e8e3d5780a47f4e04a710807debd2a92, type: 3}
+  Husband: {fileID: -2232676145085585351, guid: 35e0af6c2cd12463381b5692bebaaaa0, type: 3}
+  Baby: {fileID: 4763134275325386305, guid: 44a80979bb35a4954ab6a6515a39b10b, type: 3}

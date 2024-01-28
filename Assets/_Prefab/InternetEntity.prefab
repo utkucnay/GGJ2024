@@ -90,6 +90,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  Camper: {fileID: 0}
-  Mom: {fileID: 0}
-  Dad: {fileID: 0}
+  Camper: {fileID: -2683721878237794357, guid: 9f7dc56734afe469ea807c9130c1cae3, type: 3}
+  Mom: {fileID: 613856088314117066, guid: e10a93629d1b042429e5cbc24c286d33, type: 3}
+  Dad: {fileID: -1960977487103726405, guid: 8c2f4816b4628455397eecfcba0e8115, type: 3}

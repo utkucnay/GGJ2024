@@ -90,4 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  MemeCat: {fileID: 0}
+  MemeCat: {fileID: -7321561404576434379, guid: 5454036e5d01a4139858e1db169f0b8d, type: 3}

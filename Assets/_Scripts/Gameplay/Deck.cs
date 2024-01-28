@@ -22,6 +22,6 @@ public class Deck : Singleton<Deck>
     }
     public void RemoveDeck(Entity entity)
     {
-        entities.Remove(entity);
+        entities.RemoveAt(entities.FindIndex(x => x.GetType() == entity.GetType()));
     }
 }

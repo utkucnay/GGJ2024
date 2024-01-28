@@ -90,4 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  Pirest: {fileID: 0}
+  Pirest: {fileID: -2885633247820895221, guid: 80a1fb51630f84429b0674702bc159ec, type: 3}
