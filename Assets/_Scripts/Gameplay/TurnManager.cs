@@ -106,6 +106,8 @@ public class TurnManager : Singleton<TurnManager>
             }
 
             onShowCardEvent();
+            Talent.instance.skip = 3;
+            Talent.instance.reroll = 3;
         };
 
         onShowCardEvent = () =>
