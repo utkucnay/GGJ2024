@@ -12,12 +12,14 @@ public class Camper : Entity
         {
             sum -= 20;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
         if (Random.Range(0f, 1f) < 0.35f)
         {
             sum += 40;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
         for (int i = 0; i < entitiesInArea.Length; i++)
@@ -26,11 +28,13 @@ public class Camper : Entity
             {
                 sum += 60;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
         sum += 10;
         GoldManager.instance.gold += sum;
+        SpawnText(sum);
         return;
 
     }

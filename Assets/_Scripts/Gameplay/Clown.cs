@@ -16,6 +16,7 @@ public class Clown : Entity
             {
                 sum += 400;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
@@ -24,12 +25,14 @@ public class Clown : Entity
         {
             sum -= 25;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
         else
         {
             sum += 25;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
 

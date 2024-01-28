@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Cook : Entity
@@ -9,11 +10,16 @@ public class Cook : Entity
     public override void Execute()
     {
         base.Execute();
+
+        int sum = 0;
+
         for (int i = 0; i < entitiesInArea.Length; i++)
         {
             if (entitiesInArea[i].GetType().Name == "Dog")
             {
-                GoldManager.instance.gold -= 20;
+                sum -= 20;
+                GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
                     
             }
@@ -21,17 +27,24 @@ public class Cook : Entity
 
         if (Random.Range(0f, 1f) < 0.20f)
         {
-            GoldManager.instance.gold -= 50;
+            sum -= 50;
+            GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
         else if (Random.Range(0f, 1f) < 0.05f)
         {
-            GoldManager.instance.gold += 50;
+            sum += 50;
+            GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
         else
         {
-            GoldManager.instance.gold += 20;
+            sum += 20;
+            GoldManager.instance.gold += sum;
+            SpawnText(sum);
+            return;
         }
     }
 

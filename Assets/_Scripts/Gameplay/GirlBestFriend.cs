@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GirlBestFriend : Entity
@@ -11,6 +12,8 @@ public class GirlBestFriend : Entity
     public override void Execute()
     {
         base.Execute();
+
+        int sum = 0;
         
         for (int i = 0; i < entitiesInArea.Length; i++)
         {
@@ -31,18 +34,36 @@ public class GirlBestFriend : Entity
         {
             if (entitiesInArea[i].GetType().Name == "Disco")
             {
-                GoldManager.instance.gold += 30;
+                if (Random.Range(0f, 1f) < 0.15f)
+                {
+                    sum += 30;
+                    GoldManager.instance.gold += sum;
+                    SpawnText(sum);
+                    return;
+                }
             }
         }
 
         if (Random.Range(0f, 1f) < 0.05f)
         {
-            GoldManager.instance.gold -= 5;
+            if (Random.Range(0f, 1f) < 0.15f)
+            {
+                sum -= 5;
+                GoldManager.instance.gold += sum;
+                SpawnText(sum);
+                return;
+            }
             return;
         }
         else
         {
-            GoldManager.instance.gold += 15;
+            if (Random.Range(0f, 1f) < 0.15f)
+            {
+                sum += 15;
+                GoldManager.instance.gold += sum;
+                SpawnText(sum);
+                return;
+            }
             return;
         }
 

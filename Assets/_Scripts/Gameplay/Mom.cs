@@ -33,14 +33,15 @@ public class Mom : Entity
             {
                 sum -= 30;
                 GoldManager.instance.gold += sum;
-
-
+                SpawnText(sum);
+                return;
             }
         }
         if (Random.Range(0f, 1f) < 0.25f)
         {
             sum += 25;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
         else
@@ -48,6 +49,7 @@ public class Mom : Entity
 
             sum -=40;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
 

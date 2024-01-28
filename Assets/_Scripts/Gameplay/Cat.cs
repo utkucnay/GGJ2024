@@ -37,6 +37,7 @@ public class Cat : Entity
         {
             sum  -= 20;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
 
         }
@@ -44,6 +45,7 @@ public class Cat : Entity
         {
             sum += 20;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
     }

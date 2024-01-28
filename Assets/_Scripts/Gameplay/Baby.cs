@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Baby : Entity
 {
-    public Entity Pirest;
+    public Entity Priest;
     public override void Execute()
     {
         base.Execute();
         int sum = 0;
         for (int i = 0; i < entitiesInArea.Length; i++)
         {
-            if (entitiesInArea[i].GetType().Name == "Pirest")
+            if (entitiesInArea[i].GetType().Name == "Priest")
             {
                 Deck.instance.RemoveDeck(this);
-                Deck.instance.AddDeck(Pirest);
+                Deck.instance.AddDeck(Priest);
                 
             }
 
@@ -23,6 +23,7 @@ public class Baby : Entity
         {
             sum -= 50;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
         for (int i = 0; i < entitiesInArea.Length; i++)
@@ -31,6 +32,7 @@ public class Baby : Entity
             {
                 sum += 40;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
 
             }
@@ -38,6 +40,7 @@ public class Baby : Entity
         }
         sum += 25;
         GoldManager.instance.gold += sum;
+        SpawnText(sum);
         return;
 
     }

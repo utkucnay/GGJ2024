@@ -31,8 +31,8 @@ public class Family : Entity
             {
                sum -= 60;
                GoldManager.instance.gold += sum;
-                SpawnText(sum);
-                return;
+               SpawnText(sum);
+               return;
             }
         }
 

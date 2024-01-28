@@ -13,6 +13,7 @@ public class BoyFriend : Entity
         {
             sum -= 100;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             Deck.instance.RemoveDeck(this);
             return;
         }
@@ -48,6 +49,7 @@ public class BoyFriend : Entity
         
         sum += 50;
         GoldManager.instance.gold += sum;
+        SpawnText(sum);
         return;
         
 

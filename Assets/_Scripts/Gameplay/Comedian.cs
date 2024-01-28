@@ -13,16 +13,19 @@ public class Comedian : Entity
         {
             sum -= 45;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
 
             if (Random.Range(0f, 1f) < 0.05f)
             {
                 sum -= 45;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
 
                 if (Random.Range(0f, 1f) < 0.05f)
                 {
                     sum -= 45;
                     GoldManager.instance.gold += sum;
+                    SpawnText(sum);
                     return;
                 }
 
@@ -35,16 +38,19 @@ public class Comedian : Entity
         {
             sum += 45;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
 
             if (Random.Range(0f, 1f) < 0.05f)
             {
                 sum += 45;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
 
                 if (Random.Range(0f, 1f) < 0.05f)
                 {
                     sum += 45;
                     GoldManager.instance.gold += sum;
+                    SpawnText(sum);
                     return;
                 }
                 return;

@@ -14,6 +14,7 @@ public class Theraphist : Entity
             {
                 sum -= 5;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
 
 
@@ -26,6 +27,7 @@ public class Theraphist : Entity
             {
                 sum += 30;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
 
 
@@ -40,6 +42,7 @@ public class Theraphist : Entity
 
         sum += 5;
         GoldManager.instance.gold += sum;
+        SpawnText(sum);
         return;
     }
 }

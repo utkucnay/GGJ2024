@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Internet : Entity
@@ -12,9 +13,13 @@ public class Internet : Entity
     {
         base.Execute();
 
+        int sum = 0;
+
         if (entitiesInArea.Length == 0)
         {
-            GoldManager.instance.gold -= 100;
+            sum -= 100;
+            GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
 
@@ -24,7 +29,9 @@ public class Internet : Entity
             {
                 if (entitiesInArea[i].GetType().Name == "Camper")
                 {
-                    GoldManager.instance.gold -= 50;
+                    sum -= 50;
+                    GoldManager.instance.gold += sum;
+                    SpawnText(sum);
                     return;
                 }
             }
@@ -33,13 +40,17 @@ public class Internet : Entity
             {
                 if (entitiesInArea[i].GetType().Name == "Mom" || entitiesInArea[i].GetType().Name == "Dad")
                 {
-                    GoldManager.instance.gold += 60;
+                    sum += 60;
+                    GoldManager.instance.gold += sum;
+                    SpawnText(sum);
                     return;
 
                 }
             }
 
-            GoldManager.instance.gold += 50;
+            sum += 50;
+            GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
 
         }
