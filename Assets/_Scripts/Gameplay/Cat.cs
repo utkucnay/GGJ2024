@@ -8,6 +8,7 @@ public class Cat : Entity
     public override void Execute()
     {
         base.Execute();
+        int sum = 0;
         for (int i = 0; i < entitiesInArea.Length; i++)
         {
 
@@ -34,13 +35,15 @@ public class Cat : Entity
 
         if (Random.Range(0f, 1f) < 0.08f)
         {
-            GoldManager.instance.gold -= 20;
+            sum  -= 20;
+            GoldManager.instance.gold += sum;
             return;
 
         }
         else
         {
-            GoldManager.instance.gold += 20;
+            sum += 20;
+            GoldManager.instance.gold += sum;
             return;
         }
     }
