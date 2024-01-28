@@ -5,10 +5,12 @@ using UnityEngine;
 public class Deck : Singleton<Deck>
 {
     public List<Entity> entities;
+    Animator animator;
 
     public override void Awake()
     {
         base.Awake();
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
@@ -23,5 +25,10 @@ public class Deck : Singleton<Deck>
     public void RemoveDeck(Entity entity)
     {
         entities.RemoveAt(entities.FindIndex(x => x.GetType() == entity.GetType()));
+    }
+
+    public void Draw()
+    {
+        animator.SetTrigger("Draw");
     }
 }

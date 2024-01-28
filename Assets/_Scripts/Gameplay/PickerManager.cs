@@ -33,6 +33,7 @@ public class PickerManager : Singleton<PickerManager>
                 if(index < countDeck)
                 {
                     var card = Instantiate(entitiesShuffle[index], Deck.instance.transform.position, Quaternion.identity, GameCanvas.instance.temp.transform);
+                    card.transform.localScale = Vector2.zero;
                     entities.Add(card);
                 }
 
@@ -53,7 +54,9 @@ public class PickerManager : Singleton<PickerManager>
 
         for(int i = 0; i < entities.Count; i++) 
         {
+            seq.AppendCallback(() => Deck.instance.Draw());
             seq.Append(entities[i].Pick(pickerShuffle[i], .55f));
+            seq.Join(entities[i].transform.DOScale(Vector3.one, .2f).SetEase(Ease.InElastic));
         }
 
         for (int i = 0; i < entities.Count; i++)

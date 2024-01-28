@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour //its going to abstact class
 {
-    public GameObject prefab;
+    public Card card;
 
     public Entity[] entitiesInArea;
 

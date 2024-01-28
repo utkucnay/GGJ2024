@@ -1,3 +1,5 @@
+using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,8 +16,11 @@ public class ProgressBar : MonoBehaviour
     private void Update()
     {
         laughLoop.enabled = false;
-        float ratio = (float)GoldManager.instance.gold / TurnManager.instance.GetMaxGoldReq();
-        slider.value = ratio;
+        float ratio = 1;
+        if (TurnManager.instance.GetMaxGoldReq() != 0)
+            ratio = (float)GoldManager.instance.gold / TurnManager.instance.GetMaxGoldReq();
+        ratio = Math.Clamp(ratio, 0, 1);
+        slider.DOValue(ratio, .2f);
         if (ratio < .35f)
         {
             sliderImage.sprite = lowLaugh;
