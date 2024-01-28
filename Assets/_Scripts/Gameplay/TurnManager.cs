@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 [System.Serializable]
 public struct LevelData 
@@ -90,6 +91,7 @@ public class TurnManager : Singleton<TurnManager>
             else
             {
                 //Lose Game
+                SceneManager.LoadScene("GameOver");
                 Debug.Log("Lose Game!");
                 return;
             }
@@ -104,6 +106,7 @@ public class TurnManager : Singleton<TurnManager>
             {
                 //Win Game
                 Debug.Log("Win Game!");
+                SceneManager.LoadScene("GameWin");
                 return;
             }
 
@@ -157,6 +160,7 @@ public class TurnManager : Singleton<TurnManager>
 
     public int GetMaxGoldReq()
     {
-        return levelDatas[currentLevel].regGold;
+        var a = Mathf.Clamp(currentLevel, 0, levelDatas.Length - 1);
+        return levelDatas[a].regGold;
     }
 }
