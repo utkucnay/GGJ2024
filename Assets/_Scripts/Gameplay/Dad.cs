@@ -10,6 +10,7 @@ public class Dad : Entity
     public override void Execute()
     {
         base.Execute();
+        int sum = 0;
         for (int i = 0; i < entitiesInArea.Length; i++)
         {
             if (entitiesInArea[i].GetType().Name == "Mom")
@@ -22,6 +23,7 @@ public class Dad : Entity
                         Deck.instance.RemoveDeck(this);
                         Deck.instance.RemoveDeck(entitiesInArea[i]);
                         Deck.instance.RemoveDeck(entitiesInArea[j]);
+                        return;
 
                     }
                 }
@@ -37,12 +39,15 @@ public class Dad : Entity
         {
             if (entitiesInArea[i].GetType().Name == "BoyFriend")
             {
-                GoldManager.instance.gold -= 30;
+                sum -= 30;
+                GoldManager.instance.gold += sum;
                 return;
             }
         }
 
-        GoldManager.instance.gold += 25;
+        sum += 25;
+        GoldManager.instance.gold += sum;
+        return;
     }
 
     
