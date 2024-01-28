@@ -21,6 +21,7 @@ public class Family : Entity
         {
             sum -= 100;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
 
@@ -30,7 +31,8 @@ public class Family : Entity
             {
                sum -= 60;
                GoldManager.instance.gold += sum;
-               return;
+                SpawnText(sum);
+                return;
             }
         }
 
@@ -61,12 +63,14 @@ public class Family : Entity
             {
                 sum += 600;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
         
         sum += 500;
         GoldManager.instance.gold += sum;
+        SpawnText(sum);
         return;
 
     }

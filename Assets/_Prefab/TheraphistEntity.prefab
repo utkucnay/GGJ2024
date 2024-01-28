@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1303406431424674852}
   - component: {fileID: 4348361988296774299}
   - component: {fileID: 3784658194174505979}
-  - component: {fileID: 2579645277503379998}
+  - component: {fileID: 1975710386464435700}
   m_Layer: 5
   m_Name: TheraphistEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2579645277503379998
+--- !u!114 &1975710386464435700
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4218508093280365459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0302fa26d380e4c17a50c2a8aac1ba45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}

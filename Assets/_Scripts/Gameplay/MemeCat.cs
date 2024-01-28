@@ -34,6 +34,7 @@ public class MemeCat : Entity
             {
                 sum -= 100;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
@@ -44,6 +45,7 @@ public class MemeCat : Entity
             {
                 sum += 350;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
 
             }
@@ -55,13 +57,15 @@ public class MemeCat : Entity
             {
                 sum += 300;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
 
             }
         }
 
-            sum += 250;
-            GoldManager.instance.gold += sum;
-            return;
+        sum += 250;
+        GoldManager.instance.gold += sum;
+        SpawnText(sum);
+        return;
     }
 }

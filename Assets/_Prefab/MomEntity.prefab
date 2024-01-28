@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3877367569660514840}
   - component: {fileID: 7286200224199632606}
   - component: {fileID: 3576950023264573926}
-  - component: {fileID: 3987920056511470731}
+  - component: {fileID: 613856088314117066}
   m_Layer: 5
   m_Name: MomEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3987920056511470731
+--- !u!114 &613856088314117066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,8 +85,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5537349663279318399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: b5adcd3c9585f4cccbc2a0160da522df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
+  Family: {fileID: 0}

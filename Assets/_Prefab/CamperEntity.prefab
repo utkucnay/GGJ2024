@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3384189456900605498}
   - component: {fileID: 7683542473737590827}
   - component: {fileID: 2689717929070940594}
-  - component: {fileID: 5578896869294420130}
+  - component: {fileID: -2683721878237794357}
   m_Layer: 5
   m_Name: CamperEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5578896869294420130
+--- !u!114 &-2683721878237794357
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5938258113520154949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: df50a9e4c048349b89bfc7b1da49b0e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}

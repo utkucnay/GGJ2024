@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 411254362081225327}
   - component: {fileID: 8468157222121991157}
   - component: {fileID: 4262684340161507530}
-  - component: {fileID: 5667101202802454118}
+  - component: {fileID: 6792296777638079832}
   m_Layer: 5
   m_Name: BoyBestFriendEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5667101202802454118
+--- !u!114 &6792296777638079832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,8 +85,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3247521125720334122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: a763124b080c83b4e9eed1d5af781d66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
+  GirlFriend: {fileID: 0}
+  BoyFriend: {fileID: 0}
+  Internet: {fileID: 0}

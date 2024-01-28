@@ -23,6 +23,7 @@ public class Punk : Entity
         {
             sum -= 50;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
 
@@ -30,6 +31,7 @@ public class Punk : Entity
         {
             sum += 100;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
 
@@ -43,6 +45,7 @@ public class Punk : Entity
 
         sum += 30;
         GoldManager.instance.gold += sum;
+        SpawnText(sum);
         return;
     }
 }

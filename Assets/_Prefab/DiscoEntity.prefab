@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6582211289184247947}
   - component: {fileID: 225024418253017734}
   - component: {fileID: 4410873805540625806}
-  - component: {fileID: 4620925570971156338}
+  - component: {fileID: -7996200053756939822}
   m_Layer: 5
   m_Name: DiscoEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4620925570971156338
+--- !u!114 &-7996200053756939822
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4930569187863494012}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: cafda1e882d814e2c907912168e9d0dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}

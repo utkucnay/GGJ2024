@@ -22,6 +22,7 @@ public class Barista : Entity
         {
             sum -= 70;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
         else
@@ -32,6 +33,7 @@ public class Barista : Entity
                 {
                     sum += 60;
                     GoldManager.instance.gold += sum;
+                    SpawnText(sum);
                     return;
                 }
             }
@@ -42,12 +44,14 @@ public class Barista : Entity
                 {
                     sum += 30;
                     GoldManager.instance.gold += sum;
+                    SpawnText(sum);
                     return;
                 }
             }
 
             sum += 20;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
     }

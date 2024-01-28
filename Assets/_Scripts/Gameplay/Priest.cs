@@ -17,6 +17,7 @@ public class Priest : Entity
             {
                 sum -= 100;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
@@ -27,6 +28,7 @@ public class Priest : Entity
             {
                 sum -= 25;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
@@ -39,12 +41,14 @@ public class Priest : Entity
             {
                 sum += 100;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
 
         sum += 10;
         GoldManager.instance.gold += sum;
+        SpawnText(sum);
         return;
     }
 }

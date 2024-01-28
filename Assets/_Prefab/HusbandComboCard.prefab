@@ -133,5 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403f11d5c8a7b1d4d86b8b8476684f30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 4867430004576738540, guid: 35e0af6c2cd12463381b5692bebaaaa0, type: 3}
+  entity: {fileID: -2232676145085585351, guid: 35e0af6c2cd12463381b5692bebaaaa0, type: 3}
+  isPool: 1
   rarity: 0.00001

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1669635684540170505}
   - component: {fileID: 3605716590308404803}
   - component: {fileID: 4942619821888633368}
-  - component: {fileID: 1562850024421428626}
+  - component: {fileID: 1095730033422069979}
   m_Layer: 5
   m_Name: GirlFriendEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1562850024421428626
+--- !u!114 &1095730033422069979
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,8 +85,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 190622481281174074}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b6a2df6dcad94eb2b7cb2f3191cb451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
+  Wife: {fileID: 0}

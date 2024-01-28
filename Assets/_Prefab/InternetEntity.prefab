@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9130593841489765478}
   - component: {fileID: 5793081097729683582}
   - component: {fileID: 8420374828313516642}
-  - component: {fileID: 7826149987774528223}
+  - component: {fileID: -6333707669998325703}
   m_Layer: 5
   m_Name: InternetEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7826149987774528223
+--- !u!114 &-6333707669998325703
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,8 +85,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3044040918394467289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 44ce9d36fcf01374dac1935f1f19a954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
+  Camper: {fileID: 0}
+  Mom: {fileID: 0}
+  Dad: {fileID: 0}

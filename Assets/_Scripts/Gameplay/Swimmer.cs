@@ -15,6 +15,7 @@ public class Swimmer : Entity
         {
             sum -= 45;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return; ;
         }
 
@@ -24,6 +25,7 @@ public class Swimmer : Entity
             {
                 sum += 45;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
@@ -34,12 +36,14 @@ public class Swimmer : Entity
             {
                 sum += 30;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
 
         sum += 15;
         GoldManager.instance.gold += sum;
+        SpawnText(sum);
         return;
     }
 }

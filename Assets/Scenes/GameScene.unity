@@ -4633,14 +4633,35 @@ MonoBehaviour:
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
-    regGold: 40
+    regGold: 200
   - turnDatas:
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
-    regGold: 60
+    regGold: 500
+  - turnDatas:
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    regGold: 800
+  - turnDatas:
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    regGold: 1000
+  - turnDatas:
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    - cardShowCount: 1
+    regGold: 1800
 --- !u!4 &1805889267
 Transform:
   m_ObjectHideFlags: 0
@@ -5319,8 +5340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cfd29af7a51d849b2e3cb46fe301e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entities:
-  - {fileID: 2267510331498964824, guid: 8c2f4816b4628455397eecfcba0e8115, type: 3}
+  entities: []
 --- !u!1 &2140433880
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3293769370418514205}
   - component: {fileID: 3279435462961387456}
   - component: {fileID: 3069617386947190672}
-  - component: {fileID: 4884336432462722677}
+  - component: {fileID: -2885633247820895221}
   m_Layer: 5
   m_Name: PriestEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4884336432462722677
+--- !u!114 &-2885633247820895221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7893101838761851085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ec737515adb39a419ebb32c0b1d90f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}

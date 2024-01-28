@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3143695349690790606}
   - component: {fileID: 1228618061968964562}
   - component: {fileID: 213308169209355188}
-  - component: {fileID: 2558023260621706316}
+  - component: {fileID: -6672144509233538467}
   m_Layer: 5
   m_Name: CatEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2558023260621706316
+--- !u!114 &-6672144509233538467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,8 +85,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4953300621837493249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 224f24d228c874215b63c5931d5bd4da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
+  MemeCat: {fileID: 0}

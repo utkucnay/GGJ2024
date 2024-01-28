@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5121563030731099270}
   - component: {fileID: 906398314342424217}
   - component: {fileID: 3726994735993798458}
-  - component: {fileID: 7778662158491486132}
+  - component: {fileID: -6095369972910692214}
   m_Layer: 5
   m_Name: SwimmerEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7778662158491486132
+--- !u!114 &-6095369972910692214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8336527481202100445}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: ddda3d09fc0b8fe4cb4c782973a77431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}

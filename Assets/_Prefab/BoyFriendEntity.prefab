@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2255436764280797808}
   - component: {fileID: 1780091835275315065}
   - component: {fileID: 4450170741824688324}
-  - component: {fileID: 684954282773131084}
+  - component: {fileID: 5249827553818669448}
   m_Layer: 5
   m_Name: BoyFriendEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &684954282773131084
+--- !u!114 &5249827553818669448
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,8 +85,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6118143521559500037}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 69b44616509ea4d448028bad98754acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
+  Husband: {fileID: 0}

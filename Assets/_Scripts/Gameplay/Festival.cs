@@ -16,6 +16,7 @@ public class Festival : Entity
             {
                 sum -= 100;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
@@ -23,6 +24,7 @@ public class Festival : Entity
         {
             sum -= 100;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
         else
@@ -33,6 +35,7 @@ public class Festival : Entity
                 {
                     sum += 500;
                     GoldManager.instance.gold += sum;
+                    SpawnText(sum);
                     return;
                 }
             }
@@ -43,6 +46,7 @@ public class Festival : Entity
                 {
                     sum += 400;
                     GoldManager.instance.gold += sum;
+                    SpawnText(sum);
                     return;
                 }
             }
@@ -53,6 +57,7 @@ public class Festival : Entity
                 {
                     sum += 450;
                     GoldManager.instance.gold += sum;
+                    SpawnText(sum);
                     return;
                 }
 
@@ -62,11 +67,13 @@ public class Festival : Entity
             {
                 sum += 500;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
 
             sum += 300;
             GoldManager.instance.gold += sum;
+            SpawnText(sum);
             return;
         }
     }

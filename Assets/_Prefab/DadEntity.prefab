@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3950930269302621681}
   - component: {fileID: 4911461168276039230}
   - component: {fileID: 414523938340213399}
-  - component: {fileID: 2267510331498964824}
+  - component: {fileID: -1960977487103726405}
   m_Layer: 5
   m_Name: DadEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2267510331498964824
+--- !u!114 &-1960977487103726405
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,4 +90,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
-  Mom: {fileID: 3987920056511470731, guid: e10a93629d1b042429e5cbc24c286d33, type: 3}
+  Mom: {fileID: 0}
+  Family: {fileID: 0}

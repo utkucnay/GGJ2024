@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5955230949125689431}
   - component: {fileID: 3611274778438036597}
   - component: {fileID: 7505765712455892319}
-  - component: {fileID: 3343377040181398985}
+  - component: {fileID: -6458184231129569571}
   m_Layer: 5
   m_Name: BaristaEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3343377040181398985
+--- !u!114 &-6458184231129569571
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8419199474474288596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 514d863c6b498aa4d90382be1e523fa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}

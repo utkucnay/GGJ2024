@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4662673655002873045}
   - component: {fileID: 2690708255898185367}
   - component: {fileID: 8250308437784073025}
-  - component: {fileID: 8559292294938746790}
+  - component: {fileID: -1970160016438789131}
   m_Layer: 5
   m_Name: WifeEntity
   m_TagString: Untagged
@@ -76,7 +76,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &8559292294938746790
+--- !u!114 &-1970160016438789131
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,8 +85,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 725690120239248972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0871201574ffb2e4ea0708c8096141c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b7c23ef403414a6b8854fa716761b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 0}
   entitiesInArea: []
+  GirlFriend: {fileID: 0}
+  BoyFriend: {fileID: 0}

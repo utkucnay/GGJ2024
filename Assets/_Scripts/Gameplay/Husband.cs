@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Husband : Entity
@@ -9,9 +10,13 @@ public class Husband : Entity
     public override void Execute()
     {
         base.Execute();
+
+        int sum = 0;
+
         if (Random.Range(0f, 1f) < 0.05f)
         {
             GoldManager.instance.gold -= 1000;
+            SpawnText(sum);
             Deck.instance.RemoveDeck(this);
             return;
         }
@@ -37,6 +42,7 @@ public class Husband : Entity
         
 
         GoldManager.instance.gold += 100;
+        SpawnText(sum);
         return;
 
 
