@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEditor.Sprites;
 using UnityEngine;
 
@@ -19,6 +20,22 @@ public class Entity : MonoBehaviour //its going to abstact class
         seq.Append(transform.DOMoveY(20, .3f).SetRelative()).SetEase(Ease.InBack);
         seq.Append(transform.DOMoveY(-20, .3f).SetRelative()).SetEase(Ease.OutBack);
     }
+
+    public void SpawnText(int num) 
+    {
+        var go = new GameObject();
+        go.transform.SetParent(transform);
+        go.transform.position = transform.position;
+        go.transform.localScale = Vector3.one * .1f;
+        var textMesh = go.AddComponent<TextMeshProUGUI>();
+        textMesh.alignment = TextAlignmentOptions.Center;
+        textMesh.text = num.ToString();
+        textMesh.color = num > 0 ? Color.green : Color.red;
+        go.transform.DOMoveY(100, .2f).SetRelative();
+        go.transform.DOScale(.3f, .2f);
+        Destroy(go, .24f);
+    }
+
     public Tween Pick(Picker picker, float time) 
     {
 

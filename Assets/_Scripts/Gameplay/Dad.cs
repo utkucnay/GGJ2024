@@ -41,12 +41,14 @@ public class Dad : Entity
             {
                 sum -= 30;
                 GoldManager.instance.gold += sum;
+                SpawnText(sum);
                 return;
             }
         }
 
         sum += 25;
         GoldManager.instance.gold += sum;
+        SpawnText(sum);
         return;
     }
 
