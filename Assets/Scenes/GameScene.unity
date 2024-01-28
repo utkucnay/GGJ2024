@@ -4626,6 +4626,10 @@ MonoBehaviour:
   levelDatas:
   - turnDatas:
     - cardShowCount: 4
+    regGold: 0
+  - turnDatas:
+    - cardShowCount: 1
+    - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
@@ -4636,7 +4640,7 @@ MonoBehaviour:
     - cardShowCount: 1
     - cardShowCount: 1
     - cardShowCount: 1
-    regGold: 40
+    regGold: 60
 --- !u!4 &1805889267
 Transform:
   m_ObjectHideFlags: 0

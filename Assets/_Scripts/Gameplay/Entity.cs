@@ -33,7 +33,7 @@ public class Entity : MonoBehaviour //its going to abstact class
         textMesh.color = num > 0 ? Color.green : Color.red;
         go.transform.DOMoveY(100, .2f).SetRelative();
         go.transform.DOScale(.3f, .2f);
-        Destroy(go, .24f);
+        Destroy(go, .44f);
     }
 
     public Tween Pick(Picker picker, float time) 
